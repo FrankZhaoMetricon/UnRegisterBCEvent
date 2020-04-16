@@ -23,7 +23,7 @@ namespace UnRegisterBCEvent
                 int contractNumber = int.Parse(dr["contractNumber"].ToString());
                 int eventNumber= int.Parse(dr["eventNumber"].ToString());
 
-               // string message = sqlConn.UnregisterEventFromDataWarehouse(contractNumber, eventNumber);
+                string message = sqlConn.UnregisterEventFromDataWarehouse(contractNumber, eventNumber);
                // Console.Write("Data Warehouse: Unregister contract " + contractNumber.ToString() + " Event " + eventNumber.ToString() + " Result: " + message + Environment.NewLine);
 
                 bcResult = BcConnector.UnRegisterEvent(contractNumber, eventNumber, out errorMessage);
