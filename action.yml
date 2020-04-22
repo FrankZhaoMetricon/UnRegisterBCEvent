@@ -1,0 +1,13 @@
+name: 'Unregister Event'
+description: 'Unregister event '
+inputs:
+    event-to-greet:  # id of input
+    description: 'Event to greet'
+    required: true
+    default: '1000'
+outputs:
+  time: # id of output
+    description: 'The time we unregister event '
+runs:
+  using: 'node12'
+  main: 'index.js'
